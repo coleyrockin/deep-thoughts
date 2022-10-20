@@ -14,7 +14,8 @@ Social media application called "Deep Thoughts," where users can create an accou
 * JWT
 
 ## Link to heroku deplyment
-[Click here for Heroku link](https://deepthoughts22.herokuapp.com/)(Heroku changing free policies soon.)
+[Click here for Heroku link](https://deepthoughts22.herokuapp.com/)
+(Heroku changing free policies soon.)
 
 ## Screenshot
 ![img](./client/public/Deepthoughts.png)
