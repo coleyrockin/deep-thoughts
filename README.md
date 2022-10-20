@@ -14,12 +14,14 @@ Social media application called "Deep Thoughts," where users can create an accou
 * JWT
 
 ## Link to heroku deplyment
-[Click here for Heroku link]()
+[Click here for Heroku link](https://deepthoughts22.herokuapp.com/)(Heroku changing free policies soon.)
 
 ## Screenshot
-![img]()
+![img](./client/public/Deepthoughts.png)
 
 ### Author & Contact Info
 Boyd Roberts
-[Github Link](https://github.com/coleyrockin)
-[Email]()
+
+[Coleyrockin Github](https://github.com/coleyrockin)
+
+[Coleyrockin@aol.com](mailto:coleyrockin@aol.com)
