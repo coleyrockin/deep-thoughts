@@ -1,5 +1,5 @@
-# deep-thoughts
-Social media application called "Deep Thoughts," where users can create an account, post their thoughts for others to see, and interact with other users through these thoughts using MERN stack.
+# Deep Thoughts
+Social media application called "Deep Thoughts," where users can create an account, post their thoughts for others to see and interact with other users through these thoughts using MERN stack.
 
 ## Technology
 * MongoDB
@@ -13,9 +13,8 @@ Social media application called "Deep Thoughts," where users can create an accou
 * Apollo-server-express
 * JWT
 
-## Link to heroku deplyment
-[Click here for Heroku link](https://deepthoughts22.herokuapp.com/)
-(Heroku changing free policies Nov 2022.)
+## Link to Heroku deployment
+[Heroku Link](https://deepthoughts22.herokuapp.com/)
 
 ## Screenshot
 ![img](./client/public/Deepthoughts.png)
