@@ -18,18 +18,19 @@ db.once('open', async () => {
     userData.push({ username, email, password });
   }
 
-  const createdUsers = await User.collection.insertMany(userData);
+  const { insertedIds } = await User.collection.insertMany(userData);
+  const usersWithIds = userData.map((user, i) => ({ ...user, _id: insertedIds[i] }));
 
   // create friends
   for (let i = 0; i < 100; i += 1) {
-    const randomUserIndex = Math.floor(Math.random() * createdUsers.ops.length);
-    const { _id: userId } = createdUsers.ops[randomUserIndex];
+    const randomUserIndex = Math.floor(Math.random() * usersWithIds.length);
+    const { _id: userId } = usersWithIds[randomUserIndex];
 
     let friendId = userId;
 
     while (friendId === userId) {
-      const randomUserIndex = Math.floor(Math.random() * createdUsers.ops.length);
-      friendId = createdUsers.ops[randomUserIndex];
+      const randomUserIndex = Math.floor(Math.random() * usersWithIds.length);
+      friendId = usersWithIds[randomUserIndex];
     }
 
     await User.updateOne({ _id: userId }, { $addToSet: { friends: friendId } });
@@ -40,8 +41,8 @@ db.once('open', async () => {
   for (let i = 0; i < 100; i += 1) {
     const thoughtText = faker.lorem.words(Math.round(Math.random() * 20) + 1);
 
-    const randomUserIndex = Math.floor(Math.random() * createdUsers.ops.length);
-    const { username, _id: userId } = createdUsers.ops[randomUserIndex];
+    const randomUserIndex = Math.floor(Math.random() * usersWithIds.length);
+    const { username, _id: userId } = usersWithIds[randomUserIndex];
 
     const createdThought = await Thought.create({ thoughtText, username });
 
@@ -57,8 +58,8 @@ db.once('open', async () => {
   for (let i = 0; i < 100; i += 1) {
     const reactionBody = faker.lorem.words(Math.round(Math.random() * 20) + 1);
 
-    const randomUserIndex = Math.floor(Math.random() * createdUsers.ops.length);
-    const { username } = createdUsers.ops[randomUserIndex];
+    const randomUserIndex = Math.floor(Math.random() * usersWithIds.length);
+    const { username } = usersWithIds[randomUserIndex];
 
     const randomThoughtIndex = Math.floor(Math.random() * createdThoughts.length);
     const { _id: thoughtId } = createdThoughts[randomThoughtIndex];
