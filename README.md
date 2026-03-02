@@ -13,8 +13,12 @@ Social media application called "Deep Thoughts," where users can create an accou
 * Apollo-server-express
 * JWT
 
-## Link to Heroku deployment
-[Heroku Link](https://deepthoughts22.herokuapp.com/)
+## Deployment (free hosting)
+Recommended free host: [Render](https://render.com/).
+* Build command: `npm install && npm run build`
+* Start command: `npm start`
+* Environment: set `MONGODB_URI` to your database connection string and `JWT_SECRET` to a strong secret.
+Render will provide the public URL after the first deploy.
 
 ## Screenshot
 ![img](./client/public/Deepthoughts.png)
