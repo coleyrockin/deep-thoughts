@@ -3,7 +3,7 @@
 ![React](https://img.shields.io/badge/React-17-61DAFB?style=flat&logo=react&logoColor=white)
 ![Apollo Client](https://img.shields.io/badge/Apollo_Client-3-311C87?style=flat&logo=apollographql&logoColor=white)
 ![Express.js](https://img.shields.io/badge/Express.js-4-000000?style=flat&logo=express&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-5.9-47A248?style=flat&logo=mongodb&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-5.x-47A248?style=flat&logo=mongodb&logoColor=white)
 ![GraphQL](https://img.shields.io/badge/GraphQL-16-E10098?style=flat&logo=graphql&logoColor=white)
 ![License](https://img.shields.io/badge/License-ISC-blue?style=flat)
 
@@ -13,13 +13,13 @@ A social media application built with the MERN stack and GraphQL where users can
 
 ## Features
 
-- Create an account and log in with JWT-based authentication
-- Post thoughts visible to all users
-- Add reactions to other users' thoughts
-- View individual user profiles with their thought history
-- Friend other users
-- GraphQL API with queries and mutations
-- Database seeding with Faker-generated sample data
+- **Account Management** — Create an account and log in with JWT-based authentication
+- **Post Thoughts** — Share thoughts visible to all users
+- **Reactions** — Add reactions to other users’ thoughts
+- **User Profiles** — View individual profiles with thought history
+- **Friends** — Friend other users to build connections
+- **GraphQL API** — Queries and mutations for all data operations
+- **Seeded Data** — Faker-generated sample data for development
 
 ## Tech Stack
 
@@ -78,34 +78,4 @@ deep-thoughts/
 
 ---
 
-> Built by [coleyrockin](https://github.com/coleyrockin)# Deep Thoughts
-Social media application called "Deep Thoughts," where users can create an account, post their thoughts for others to see and interact with other users through these thoughts using MERN stack.
-
-## Technology
-* MongoDB
-* Express
-* React
-* Node.JS
-* GraphQL
-* Mongoose
-* Faker
-* Bcrypt
-* Apollo-server-express
-* JWT
-
-## Deployment (free hosting)
-Heroku's free tier is gone, and this repo no longer includes any Heroku config. Use [Render](https://render.com/) free Web Service instead:
-* Build command: `npm install && npm run build`
-* Start command: `npm start`
-* Environment: set `MONGODB_URI` to your database connection string and `JWT_SECRET` to a strong secret.
-Render will provide the public URL after the first deploy. Railway's free tier works similarly if you prefer that platform.
-
-## Screenshot
-![img](./client/public/Deepthoughts.png)
-
-### Author & Contact Info
-Boyd Roberts
-
-[Coleyrockin Github](https://github.com/coleyrockin)
-
-[Coleyrockin@aol.com](mailto:coleyrockin@aol.com)
+Built by [Boyd Roberts](https://github.com/coleyrockin)
